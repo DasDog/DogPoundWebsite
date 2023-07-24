@@ -1,0 +1,86 @@
+<!--
+Benton Amon
+Project 8
+11/29/2020
+-->
+
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Amon's Dog Pound</title>
+        
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        
+        <!-- Script for the Submit Button -->
+        <script>
+            function submit() {
+                alert("Your review has been submitted.");
+            }
+</script>
+    </head>
+
+    
+    <body>
+        
+        <!-- TOP SECTION -->
+        <div class="top"><img src="amonpound.png" alt="Amons Dog Pound" class="title"></div>
+        
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="rescue.html">Rescue</a>
+            <a href="training.html">Training</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <!-- CONTENT -->
+        <br><h1 class="header">Training</h1><br>
+        
+        <div class="content">
+            <p>As many of you already know, training your pet is very important. Unfortunately it can be difficult at times. Don't fret! We offer classes for both you and your best pal taught by trained professionals. Mr. Killoran (our head trainer) has been in charge of our training program for over a decade and even has experience with top show dogs. In 2006 him and his Saint Bernard won the <a href="https://www.westminsterkennelclub.org/">Westminister Dog Show</a>. He is also a member of the prestigious <a href="https://saintbernardclub.org">Saint Bernard Club</a>. Take a look at some of our reviews!</p>
+
+        <h3 id="review">George Porterfield <img src="fiveStars.png" alt="five stars" height="17px"></h3>
+        
+        <p id="review">Me and my dog Joel had an amazing time at Amon's Pound. The service was outstanding and all of the staff were very friendly with both me and Joel. I'm writing this review 6 months after completing the course and I will vouch that the training actually works and lasts. I 100% recommend anyone looking for dog training to go here.</p>
+        
+        <hr>
+            
+        <h3 id="review">Cory Dech <img src="fiveStars.png" alt="five stars" height="17px"></h3>
+        <p id="review">Before coming to Amon's Pound my black lab (Rose) was completely out of line. Don't get me wrong, she was nice, but you could easily mistake her as deaf. We tried other places but none of them really worked. However Amon's Dog Pound was a complete game changer. Everyone there was experienced with difficult dogs and by the end Rose was fully trained. Thank you!</p>  
+        </div>
+        
+        <!-- SUBMIT REVIEW FORM -->
+        <div class="content">
+        <p>If you would like to fill out your own review you may do so below...</p>
+        <form action="/action_page.php">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname"><br>
+                
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname"><br>
+                
+                <label for="stars">Choose your Star Ranking:</label>
+                <select id="stars" name="stars">
+                    <option value="fiveStar">5</option>
+                    <option value="fourStar">4</option>
+                    <option value="threeStar">3</option>
+                    <option value="twoStar">2</option>
+                    <option value="oneStar">1</option>
+                </select><br>
+                
+                <textarea cols="80" rows="10">Please leave any questions, comments, and/or concerns you have here.</textarea><br>
+            </form>
+        
+        <!-- SUBMIT BUTTON (JavaScript) -->
+        <button onclick="submit()">Submit</button>
+        
+        </div>
+        
+        <!-- FOOTER -->
+        <div class="footer">
+            <h5>Property of Amon's Dog Pound&#169</h5>
+            <img src="blueDog.png" alt="Blue Dog" width="100px" height="100px">
+        </div>
+        
+    </body>
+</html>
